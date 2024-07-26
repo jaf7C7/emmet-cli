@@ -8,7 +8,19 @@ Just clone the repo and symlink the `emmet` script to a directory in your
 ## Usage
 
 ```
-$ emmet 'html:5'
+$ emmet 'ul>(li>a.my-link$)*5'
+<ul>
+    <li><a href="" class="my-link1"></a></li>
+    <li><a href="" class="my-link2"></a></li>
+    <li><a href="" class="my-link3"></a></li>
+    <li><a href="" class="my-link4"></a></li>
+    <li><a href="" class="my-link5"></a></li>
+</ul>
+```
+
+Also reads from stdin:
+```
+$ echo \! | emmet
 <!DOCTYPE html>
 <html lang="en">
 <head>
