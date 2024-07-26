@@ -2,8 +2,13 @@
 
 ## Installation
 
-Just clone the repo and symlink the `emmet` script to a directory in your
-`PATH`.
+Just clone the repo, install the dependencies (`emmet`) and symlink the
+`emmet` script to a directory in your `PATH`. For example, to install the script
+to `~/.local/bin`:
+
+```
+git clone https://github.com/jaf7C7/emmet-cli.git && ln -s $PWD/emmet-cli/bin/emmet ~/.local/bin/
+```
 
 ## Usage
 
