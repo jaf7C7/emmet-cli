@@ -1,6 +1,6 @@
 # A cli wrapper for `emmet`
 
-# Installation
+## Installation
 
 Just clone the repo and symlink the `emmet` script to a directory in your
 `PATH`.
