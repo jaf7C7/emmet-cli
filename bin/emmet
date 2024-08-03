@@ -23,7 +23,9 @@ else {
         output: null,
     });
     rl.on('line', (line) => {
-        console.log(expand(line.trim(), config));
+        const indent = line.replace(/\S.*/, '');
+        for (let l of expand(line.trim(), config).split('\n'))
+            console.log(indent + l);
     }).on('close', () => {
         process.exit(0);
     });
