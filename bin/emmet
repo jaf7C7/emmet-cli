@@ -4,12 +4,15 @@ import expand from 'emmet';
 import readline from 'node:readline';
 
 const argv = process.argv.slice(2);
+
+// TODO: Add command-line options to change output indentation.
 // For configuration options, see:
 // https://github.com/emmetio/emmet/blob/master/src/config.ts
 const config = {
     "type": "markup",
     "options": {
-        "output.indent": "    "
+        //"output.indent": "    "
+        "output.indent": "\t"
     }
 }
 
