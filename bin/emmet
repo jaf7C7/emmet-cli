@@ -17,9 +17,9 @@ const config = {
 }
 
 if (argv[0] == '--help')
-    console.log('https://docs.emmet.io/cheat-sheet/')
+    process.stdout.write('https://docs.emmet.io/cheat-sheet/\n')
 else if (argv.length > 0)
-    argv.forEach(arg => console.log(expand(arg.trim(), config)));
+    argv.forEach(arg => process.stdout.write(expand(arg.trim(), config) + '\n'));
 else {
     const rl = readline.createInterface({
         input: process.stdin,
@@ -28,7 +28,7 @@ else {
     rl.on('line', (line) => {
         const indent = line.replace(/\S.*/, '');
         for (let l of expand(line.trim(), config).split('\n'))
-            console.log(indent + l);
+            process.stdout.write(indent + l + '\n');
     }).on('close', () => {
         process.exit(0);
     });
