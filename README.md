@@ -24,6 +24,7 @@ $ emmet 'ul>(li>a.my-link$)*5'
 ```
 
 Also reads from stdin:
+
 ```
 $ echo \! | emmet
 <!DOCTYPE html>
@@ -34,7 +35,7 @@ $ echo \! | emmet
     <title>Document</title>
 </head>
 <body>
-	
+
 </body>
 </html>
 ```

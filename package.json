@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A cli wrapper for the `emmet` module.",
   "main": "",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
