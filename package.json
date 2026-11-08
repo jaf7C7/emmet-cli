@@ -9,8 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-  "type": "module",
   "dependencies": {
-    "emmet": "^2.4.7"
+    "emmet": "^2.4.11"
   }
 }
